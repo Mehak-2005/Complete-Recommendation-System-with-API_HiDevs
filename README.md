@@ -181,7 +181,7 @@ copy
 
 ## 👨‍💻 Author
 
-Mohammed Saif R
+Mehak
 
 ---
 
