@@ -1,13 +1,5 @@
-# Complete Recommendation System with API
+# 🚀 Complete Recommendation System with API
 
-This project is automatically generated.
-
-## Installation
-
-Bash
-
-
-pip install -r requirements.txt
 ## 📌 Overview
 
 This project implements a complete Recommendation System using Python. It integrates a database, recommendation engine, and REST API to simulate how platforms like Netflix and Amazon provide personalized suggestions.
@@ -170,9 +162,6 @@ copy
 
 ---
 
-## Youtube Demo
-Demo Link : ""
-
 ## 🎯 Results
 
 * ✔ High Recall (1.0)
@@ -192,6 +181,10 @@ Demo Link : ""
 
 ## 👨‍💻 Author
 
-Mehak
+Mohammed Saif R
 
 ---
+
+## 📌 Note
+
+This project demonstrates the core architecture of modern recommendation systems and can be extended for real-world applications.
