@@ -52,7 +52,7 @@ day30_capstone/
 ### 1. Clone Repository
 
 ```
-git clone <your-repo-url>
+git clone <https://github.com/Mehak-2005/Complete-Recommendation-System-with-API_HiDevs.git>
 cd day30_capstone
 ```
 
