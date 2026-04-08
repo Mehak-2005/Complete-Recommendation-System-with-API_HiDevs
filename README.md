@@ -213,7 +213,7 @@ Demo Link: https://youtu.be/LroBDuMORoE
 
 ## 👨‍💻 Author
 
-**Mohammed Saif R**
+**Mehak**
 
 ---
 
