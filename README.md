@@ -2,24 +2,24 @@
 
 ## 📌 Overview
 
-This project implements a complete Recommendation System using Python. It integrates a database, recommendation engine, and REST API to simulate how platforms like Netflix and Amazon provide personalized suggestions.
+This project implements a **Recommendation System API** using Python. It focuses on a **popularity-based recommendation approach** combined with filtering of previously interacted items to generate personalized suggestions.
 
-The system combines candidate generation, scoring, ranking, and evaluation metrics to produce meaningful recommendations.
+The project demonstrates the **core architecture of a recommendation system**, including database integration, API design, evaluation metrics, testing, and performance analysis.
 
 ---
 
 ## 🧠 Key Features
 
-* 🔹 Recommendation Engine (Day 29 integration)
+* 🔹 Recommendation Engine (Popularity-based ranking)
+* 🔹 Filtering of already interacted items
 * 🔹 SQLite Database (Users, Content, Interactions)
 * 🔹 REST API using Flask
-* 🔹 Candidate Generation + Scoring + Ranking
 * 🔹 Cold Start Handling (new users supported)
 * 🔹 Feedback Recording System
 * 🔹 Evaluation Metrics (Precision@K, Recall@K, NDCG@K)
 * 🔹 Request Logging with unique request IDs
 * 🔹 Performance Metrics Tracking (average response time)
-* 🔹 In-memory Caching for faster responses
+* 🔹 In-memory caching for faster responses
 * 🔹 Load Testing (10 concurrent users simulation)
 * 🔹 Unit Testing with >85% coverage (Pytest)
 
@@ -27,15 +27,17 @@ The system combines candidate generation, scoring, ranking, and evaluation metri
 
 ## 📂 Project Structure
 
+```
 day30_capstone/
 ├── data/              # Database layer (SQLite + repositories)
-├── engine/            # Recommendation engine (orchestrator + evaluator)
+├── engine/            # Recommendation logic (orchestrator + evaluator)
 ├── api/               # Flask API
 ├── scripts/           # Utilities (seed, evaluate, load test)
 ├── tests/             # Unit tests
 ├── requirements.txt
 ├── README.md
 └── evaluation_report.md
+```
 
 ---
 
@@ -53,34 +55,42 @@ day30_capstone/
 
 ### 1. Clone Repository
 
+```
 git clone https://github.com/<your-username>/Complete-Recommendation-System-with-API_HiDevs.git
 cd Complete-Recommendation-System-with-API_HiDevs
+```
 
 ---
 
 ### 2. Install Dependencies
 
+```
 pip install -r requirements.txt
+```
 
 ---
 
 ### 3. Reset & Seed Database
 
+```
 rm recommendation.db
 python -m scripts.seed_data
+```
 
 ---
 
 ### 4. Run API Server
 
+```
 python -m api.app
+```
 
 ---
 
 ### 5. Access API (Codespaces)
 
-* Open PORTS tab
-* Open port 5000
+* Open **PORTS tab**
+* Open port **5000**
 
 ---
 
@@ -88,16 +98,17 @@ python -m api.app
 
 | Endpoint            | Method   | Description                   |
 | ------------------- | -------- | ----------------------------- |
-| /                 | GET      | API overview                  |
-| /health           | GET      | Health check                  |
-| /recommend/<user> | GET      | Get recommendations           |
-| /feedback         | GET/POST | Submit or view feedback usage |
-| /metrics          | GET      | Performance metrics           |
+| `/`                 | GET      | API overview                  |
+| `/health`           | GET      | Health check                  |
+| `/recommend/<user>` | GET      | Get recommendations           |
+| `/feedback`         | GET/POST | Submit or view feedback usage |
+| `/metrics`          | GET      | Performance metrics           |
 
 ---
 
 ## 📊 Example Output
 
+```json
 {
   "request_id": "abc-123",
   "user": "u1",
@@ -108,6 +119,7 @@ python -m api.app
     }
   ]
 }
+```
 
 ---
 
@@ -115,12 +127,16 @@ python -m api.app
 
 Run all tests:
 
+```
 pytest --cov
+```
 
 Expected:
 
+```
 Coverage: 85%+
 All tests passed ✅
+```
 
 ---
 
@@ -128,11 +144,15 @@ All tests passed ✅
 
 Run evaluation:
 
+```
 python -m scripts.evaluate
+```
 
 Example output:
 
+```
 {'precision': 0.6, 'recall': 1.0, 'ndcg': 0.9}
+```
 
 ---
 
@@ -140,10 +160,13 @@ Example output:
 
 Simulate concurrent users:
 
+```
 python -m scripts.load_test
+```
 
 Example output:
 
+```
 🚀 Starting Load Test...
 
 [1] ✅ Success | Time: 0.0012s
@@ -157,6 +180,7 @@ Failed           : 0
 Average Time     : 0.0013s
 
 ✅ Load Test Completed Successfully 🚀
+```
 
 ---
 
@@ -172,25 +196,27 @@ Average Time     : 0.0013s
 
 ## 🎥 YouTube Demo
 
-Demo Link: https://youtu.be/LnjOTTaL_d8
+Demo Link: https://youtu.be/LroBDuMORoE
 
 ---
 
 ## 🔮 Future Improvements
 
-* Machine Learning-based recommendations
-* Knowledge graph integration
+* Add collaborative filtering
+* Add content-based recommendation logic
+* Hybrid recommendation system (multiple strategies)
 * Real-time personalization
-* Frontend dashboard (React / Streamlit)
-* Deployment on cloud (Render / AWS)
+* Frontend dashboard
+* Cloud deployment (Render / AWS)
 
 ---
 
 ## 👨‍💻 Author
 
-Mehak
+**Mohammed Saif R**
 
 ---
 
+## 📌 Note
 
-This project demonstrates the architecture of a modern recommendation system, including API design, database integration, evaluation metrics, and performance testing. It is designed as a scalable foundation for real-world systems.
+This project demonstrates the **foundational architecture of recommendation systems**, focusing on API design, database
