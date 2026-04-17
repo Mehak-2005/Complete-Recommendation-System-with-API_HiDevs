@@ -1,6 +1,0 @@
-# Add your project dependencies here
-
-flask
-pytest
-requests
-pytest-cov
