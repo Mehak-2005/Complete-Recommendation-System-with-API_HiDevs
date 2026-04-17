@@ -144,6 +144,11 @@ python scripts/load_test.py
 Simulates multiple users hitting the API.
 
 ---
+## Youtube Video ##
+---
+https://youtu.be/Teig1iLt0Uk
+
+---
 
 ## 🧠 Notes
 
